@@ -1,0 +1,342 @@
+@charset "utf-8";
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* body */
+.all_content{
+  background:#ECF1F6;
+}
+ul,
+li{
+  list-style:none;
+}
+
+/* サイドバー */
+.sidebar{
+  width:200px;
+  height:100vh;
+  background-color:#03AAD2;
+  font-weight:bold;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.main-container{
+  width:100%;
+}
+.sidebar p{
+  padding-bottom: 10px;
+}
+.sidebar p:hover{
+  transition: .3s;
+  background-color: #1d68a7;
+  padding-left: 5px;
+}
+.sidebar p a{
+  color:#FFF;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+/* トップページ */
+.user_status{
+  border-radius:10px;
+  background:#FFF;
+}
+
+/* スクール予約関連 */
+.day-blank{
+  background:#D3D3D3;
+}
+.day-sat{
+  color:#0000FF;
+}
+.day-sun{
+  color:#FF0000;
+}
+.past-day{
+  background:#EEE;
+}
+.calendar-td{
+  min-width:100px;
+}
+.day_part{
+  color:#494949;
+  font-size:12px;
+}
+.adjust-table{
+  width:70% !important;
+}
+.adjust-table td{
+  padding:0 !important;
+}
+.adjust-area p{
+  justify-content: space-around;
+}
+.adjust-table-btn{
+  width:70%;
+}
+
+/* モーダル */
+.modal{
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.modal__bg{
+    background: rgba(0,0,0,0.8);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+.modal__content{
+    background: #fff;
+    left: 50%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+}
+
+/* 掲示板 */
+.new_post{
+  width: 80%;
+  background: linear-gradient(to left, rgba(10, 153, 202, 0.8), rgba(0, 180, 219, 0.8));
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.new_post a{
+  color: #FFF;
+  display: block;
+}
+
+.post-date{
+  font-size: 10px;
+  margin-left: 160px;
+}
+
+.new_post:hover{
+  background: linear-gradient(to left, rgba(10, 153, 202), rgba(0, 180, 219));
+}
+
+.sub_categories{
+  display:none;
+}
+.post_create_area{
+  background:#FFF;
+  border-radius:10px;
+}
+.post_create_area textarea{
+  resize:none;
+  height:300px;
+  white-space: pre-wrap;
+}
+.detail_container{
+  background:#FFF;
+}
+.post_area{
+  background: rgba(245, 245, 245);
+  border-radius:10px;
+}
+.post_area:hover{
+  transition: .3s;
+  background: rgba(245, 245, 245, 0.3);
+}
+
+.post_area p a{
+  display: block;
+}
+
+.post_bottom_area{
+  justify-content: space-between;
+}
+.like_btn,
+.un_like_btn{
+  cursor:pointer;
+}
+.un_like,
+.un_like_btn{
+  color:#E2254D;
+}
+.error_message{
+  font-size:12px;
+  color:red;
+}
+
+/* 掲示板 詳細画面 */
+.contributor{
+  font-size:12px;
+  color:#999;
+  font-weight:bold;
+}
+.detsail_post_title{
+  font-size:14px;
+}
+.detsail_post{
+  font-size:12px;
+  color:#9E9E9E;
+}
+.detail_inner_head{
+  display:flex;
+  justify-content: space-between;
+}
+.edit-modal-open{
+  cursor:pointer;
+}
+.modal-inner-body textarea{
+  height:150px;
+  resize:none;
+}
+.edit-modal-btn{
+  justify-content: space-between;
+}
+/* 掲示板 コメント */
+.comment_container{
+  background:#FFF;
+}
+.comment_area p,
+.comment_area input{
+  font-size:12px;
+  font-weight:bold;
+}
+.comment_area textarea{
+  height:300px;
+  resize:none;
+}
+.comment_container span{
+  font-size:12px;
+}
+.post_status span{
+  font-size:12px;
+}
+
+/* 掲示板 カテゴリー */
+.category_area{
+  background:#FFF;
+  border-radius:10px;
+}
+.category_box{
+  border-radius:5px;
+  padding:3px;
+  background:#999;
+  font-size:10px;
+  color:#FFF;
+}
+.category_btn{
+  font-size:12px;
+  border:none;
+  color:#FFF;
+  cursor: pointer;
+}
+.sub_category_btn{
+  background: rgba(169, 169, 169);
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.button_area{
+  margin: 10px auto 20px auto;
+}
+
+.like_post{
+  background: linear-gradient(to left, rgba(217, 76, 122, 0.7), rgba(225, 115, 151, 0.7));
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.like_post:hover{
+  background: linear-gradient(to left, rgba(217, 76, 122), rgba(225, 115, 151));
+}
+
+.my_post{
+  background: linear-gradient(to left, rgba(225, 149, 26, 0.7), rgba(238, 177, 46, 0.7));
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.my_post:hover{
+  background: linear-gradient(to left, rgba(225, 149, 26), rgba(238, 177, 46));
+}
+.main_categories{
+  margin-top: 10px;
+}
+.main_categories span,
+.sub_categories li input{
+  list-style:none;
+  cursor:pointer;
+}
+
+.slide-button{
+  position: absolute;
+  display: block;
+  margin-left: 150px;
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid #696969;
+  border-bottom: 2px solid #696969;
+  cursor: pointer;
+  -webkit-transform: rotate(-45deg); /* 反時計回り\/ */
+  -moz-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.slide-button.active {
+  margin-top: 5px;
+  -webkit-transform: rotate(135deg); /* 時計回り\/ */
+  -moz-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.sub_categories_name{
+  background: none;
+  border: none;
+  color: #4169e1;
+  cursor: pointer;
+}
+
+/* ユーザー検索 */
+.reserve_users_area{
+  display:flex;
+  flex-wrap:wrap;
+  width:800px;
+  margin:10px auto;
+  height:80vh;
+  overflow: scroll;
+  padding:10px;
+  background:#FFF;
+  border-radius:5px;
+}
+.reserve_users_area span{
+  font-size:12px;
+}
+.one_person{
+  width:250px;
+  height:250px;
+}
+.one_person a{
+  display: block;
+}
+.one_person:hover{
+  background: rgba(243, 246, 244, 0.8);
+}
+.search_conditions span{
+  cursor:pointer;
+}
+.search_conditions_inner{
+  display:none;
+  background:#FFF;
+}
+.subject_edit_btn{
+  font-size:12px;
+  color:#0000FF;
+  cursor:pointer;
+}
+.subject_inner{
+  display:none;
+}
