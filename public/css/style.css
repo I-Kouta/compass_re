@@ -318,6 +318,7 @@ li{
 .one_person{
   width:250px;
   height:250px;
+  cursor: pointer;
 }
 .one_person a{
   display: block;
