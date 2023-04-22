@@ -27,6 +27,7 @@ li{
 }
 .sidebar p{
   padding-bottom: 10px;
+  cursor: pointer;
 }
 .sidebar p:hover{
   transition: .3s;
