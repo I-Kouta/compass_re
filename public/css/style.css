@@ -33,6 +33,9 @@ li{
   background-color: #1d68a7;
   padding-left: 5px;
 }
+.sidebar p:not(:hover) {
+  transition: .3s;
+}
 .sidebar p a{
   color:#FFF;
   margin-left: 10px;
