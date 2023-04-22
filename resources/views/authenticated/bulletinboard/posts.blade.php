@@ -5,7 +5,7 @@
   <div class="post_view w-75 mt-5">
     <p class="w-75 m-auto">投稿一覧</p>
     @foreach($posts as $post)
-    <div class="post_area border w-75 m-auto p-3">
+    <div class="post_area border w-75 m-auto p-3" onclick="location.href='{{ route('post.detail', ['id' => $post->id]) }}'">
       <p>
         <span>{{ $post->user->over_name }}</span>
         <span class="ml-3">{{ $post->user->under_name }}</span>さん
@@ -37,7 +37,7 @@
   </div>
   <div class="other_area border w-25">
     <div class="border m-4">
-      <div class="new_post"><a href="{{ route('post.input') }}">投稿</a></div>
+      <div class="new_post" onclick="location.href='{{ route('post.input') }}'"><a href="{{ route('post.input') }}">投稿</a></div>
       <input type="text" placeholder="キーワードを入力" name="keyword" form="postSearchRequest">
       <input type="submit" value="検索" form="postSearchRequest">
       <div class="button_area">

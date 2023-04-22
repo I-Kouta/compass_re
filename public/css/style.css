@@ -109,15 +109,15 @@ li{
 /* 掲示板 */
 .new_post{
   width: 80%;
-  background: linear-gradient(to left, rgba(10, 153, 202, 0.8), rgba(0, 180, 219, 0.8));
+  background: linear-gradient(to left, rgba(10, 153, 202, 0.7), rgba(0, 180, 219, 0.7));
   text-align: center;
   padding: 5px;
   border-radius: 10px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .new_post a{
   color: #FFF;
-  display: block;
 }
 
 .post-date{
@@ -147,16 +147,12 @@ li{
 .post_area{
   background: rgba(245, 245, 245);
   border-radius:10px;
+  cursor: pointer;
 }
 .post_area:hover{
   transition: .3s;
   background: rgba(245, 245, 245, 0.3);
 }
-
-.post_area p a{
-  display: block;
-}
-
 .post_bottom_area{
   justify-content: space-between;
 }
