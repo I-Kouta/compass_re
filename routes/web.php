@@ -11,6 +11,10 @@
 |
 */
 
+Route::get('/', function () {
+    return view('welcome');
+});
+
 Route::group(['middleware' => ['guest']], function(){
     Route::namespace('Auth')->group(function(){
         Route::get('/register', 'RegisterController@registerView')->name('registerView');
