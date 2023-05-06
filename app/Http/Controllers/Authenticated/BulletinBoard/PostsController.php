@@ -79,7 +79,7 @@ class PostsController extends Controller
         if ($post->user_id != auth()->user()->id){
             return redirect()->back()->with("error", "投稿を削除する権限がありません");
         }
-        Post::findOrFail($id)->delete();
+        $post->deletePostAndComments();
         return redirect()->route('post.show');
     }
 

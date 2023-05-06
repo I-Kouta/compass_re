@@ -23,6 +23,11 @@ class Post extends Model
         return $this->hasMany('App\Models\Posts\PostComment');
     }
 
+    public function deletePostAndComments(){
+        $this->postComments()->delete();
+        $this->delete();
+    }
+
     public function subCategories(){
         return $this->belongsToMany('App\Models\Categories\SubCategory', 'post_sub_categories', 'post_id', 'sub_category_id')->withPivot('id');
     }
