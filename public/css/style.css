@@ -130,10 +130,6 @@ li{
 .new_post:hover{
   background: linear-gradient(to left, rgba(10, 153, 202), rgba(0, 180, 219));
 }
-
-.sub_categories{
-  display:none;
-}
 .post_create_area{
   background:#FFF;
   border-radius:10px;
@@ -219,6 +215,9 @@ li{
 }
 
 /* 掲示板 カテゴリー */
+.sub_categories {
+  display: none;
+}
 .category_area{
   background:#FFF;
   border-radius:10px;
@@ -268,8 +267,7 @@ li{
 .main_categories{
   margin-top: 10px;
 }
-.main_categories span,
-.sub_categories li input{
+.main_categories span{
   list-style:none;
   cursor:pointer;
 }
