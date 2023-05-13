@@ -341,3 +341,10 @@ li{
 .subject_inner{
   display:none;
 }
+.subjects-search{
+  display: flex;
+}
+.subject-check{
+  margin-right: 15px;
+  margin-left: 5px;
+}
