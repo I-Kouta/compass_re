@@ -266,12 +266,8 @@ li{
 }
 .main_categories{
   margin-top: 10px;
-}
-.main_categories span{
-  list-style:none;
   cursor:pointer;
 }
-
 .slide-button{
   position: absolute;
   display: block;
