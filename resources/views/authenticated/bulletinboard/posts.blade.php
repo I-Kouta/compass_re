@@ -55,6 +55,8 @@
           <input type="submit" class="sub_categories_name" name="category_word" value="{{ $sub_category->sub_category }}" form="postSearchRequest">
           @if($sub_category->posts->count() != 0)
           ({{ $sub_category->posts->count() }})
+          @else
+          <a href="" onclick="return confirm('このサブカテゴリーを削除します。よろしいでしょうか？')"> 削除まだ</a>
           @endif
         </p>
         @endforeach
