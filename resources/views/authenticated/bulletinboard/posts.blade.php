@@ -53,6 +53,9 @@
         @foreach($category->subCategories as $sub_category)
         <p class="sub_categories category_num{{ $sub_category->main_category_id }}">
           <input type="submit" class="sub_categories_name" name="category_word" value="{{ $sub_category->sub_category }}" form="postSearchRequest">
+          @if($sub_category->posts->count() != 0)
+          ({{ $sub_category->posts->count() }})
+          @endif
         </p>
         @endforeach
         @endforeach
