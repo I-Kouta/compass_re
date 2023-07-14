@@ -64,9 +64,9 @@ class CalendarView{
             '<button type="submit"
             class="cancel-modal-open btn btn-danger p-0 w-75"
             name="delete_date" style="font-size:12px"
-            cancel_reserve_view="予約日：'.$day->authReserveDate($day->everyDay())->first()->setting_reserve.'"
             cancel_reserve='.$day->authReserveDate($day->everyDay())->first()->setting_reserve.'
-            cancel_part_view="時間：リモ'.$day->authReserveDate($day->everyDay())->first()->setting_part.'部"
+            cancel_reserve_view="予約日：'.$day->authReserveDate($day->everyDay())->first()->setting_reserve.'"
+            cancel_part_view="時間：'.$reservePart.'"
             cancel_part='.$day->authReserveDate($day->everyDay())->first()->setting_part.'>
             '.$reservePart.'
             </button>';
