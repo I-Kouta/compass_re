@@ -53,8 +53,8 @@
         @foreach($category->subCategories as $sub_category)
         <p class="sub_categories category_num{{ $sub_category->main_category_id }}">
           <input type="submit" class="sub_categories_name" name="category_word" value="{{ $sub_category->sub_category }}" form="postSearchRequest">
-          @if($sub_category->posts->count() != 0)
-          ({{ $sub_category->posts->count() }})
+          @if($sub_category->deletePostSubcategory() != 0)
+          ({{ $sub_category->deletePostSubcategory() }})
           @else
           <a href="{{ route('subCategory.delete', ['id' => $sub_category->id]) }}" onclick="return confirm('このサブカテゴリーを削除します。よろしいでしょうか？')"> 削除</a>
           @endif
