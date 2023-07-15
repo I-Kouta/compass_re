@@ -83,10 +83,6 @@ class PostsController extends Controller
         return redirect()->route('post.show');
     }
 
-    public function subCategoryDelete($id){
-        dd($id);
-    }
-
     public function mainCategoryCreate(MainCategoryFormRequest $request){
         MainCategory::create([
             'main_category' => $request->main_category
@@ -100,6 +96,12 @@ class PostsController extends Controller
             'sub_category' => $request->sub_category
         ]);
         return redirect()->route('post.input');
+    }
+
+    public function subCategoryDelete($id){
+        // dd($id);
+        SubCategory::where("id", $id)->delete();
+        return redirect()->route('post.show');
     }
 
     public function commentCreate(CommentRequest $request){
