@@ -56,7 +56,7 @@
           @if($sub_category->posts->count() != 0)
           ({{ $sub_category->posts->count() }})
           @else
-          <a href="" onclick="return confirm('このサブカテゴリーを削除します。よろしいでしょうか？')"> 削除まだ</a>
+          <a href="{{ route('subCategory.delete', ['id' => $sub_category->id]) }}" onclick="return confirm('このサブカテゴリーを削除します。よろしいでしょうか？')"> 削除</a>
           @endif
         </p>
         @endforeach

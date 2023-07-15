@@ -83,6 +83,10 @@ class PostsController extends Controller
         return redirect()->route('post.show');
     }
 
+    public function subCategoryDelete($id){
+        dd($id);
+    }
+
     public function mainCategoryCreate(MainCategoryFormRequest $request){
         MainCategory::create([
             'main_category' => $request->main_category
