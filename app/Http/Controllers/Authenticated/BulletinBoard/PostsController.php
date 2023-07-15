@@ -100,6 +100,10 @@ class PostsController extends Controller
 
     public function subCategoryDelete($id){
         // dd($id);
+        $subCategory = Subcategory::find($id)->posts->count(); # 紐づいている投稿の数を数える
+        if ($subCategory != 0){
+            return redirect()->back();
+        }
         SubCategory::where("id", $id)->delete();
         return redirect()->route('post.show');
     }
